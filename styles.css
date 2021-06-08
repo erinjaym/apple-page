@@ -1,4 +1,27 @@
 body
 {
-background: grey;
+background: white;
+}
+
+nav{
+background-color: grey;
+color: white;
+display: flex;
+}
+
+ul{
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    list-style: none;;
+    width: 50vw;
+    height: 10vh;
+}
+
+.li{
+
+}
+
+a{
+color: black;
 }
