@@ -19,19 +19,79 @@ article, aside, footer, header, hgroup, nav, section, figure, figcaption {
     display: block;
 }
 
+nav{
+    border-radius: 4px;
+    box-shadow: rgb(0 0 0 / 30%) 0 1px 2px;
+    color: white;
+    display: block;
+    font: 12px/18px "Lucida Grande", "Lucida Sans Unicode", Helvetica, Arial, Verdana, sans-serif;
+
+    table-layout: fixed;
+    text-align: left;
+    margin: 0 auto;
+    height: 36px;
+    padding: 0;
+    position: relative;
+    top: 18px;
+    width: 980px;
+    background:  -webkit-gradient(linear, 0 0, 0 100%, 
+    from(rgba(0, 0, 0, .2)), color-stop(0.05, rgba(0, 0, 0, 0)), 
+    color-stop(0.97, rgba(0, 0, 0, 0)), 
+    to(rgba(0, 0, 0, .45))), 
+    -webkit-gradient(linear, 0 0, 100% 0, 
+    from(rgba(0, 0, 0, .2)), 
+    color-stop(0.002, rgba(0, 0, 0, 0)), color-stop(0.998, rgba(0, 0, 0, 0)), 
+    to(rgba(0, 0, 0, .2))), 
+    -webkit-gradient(linear, 0 100%, 0 0, 
+    from(#666), color-stop(0.5, #5e5e5e), color-stop(0.51, #707070), 
+    to(#808080));
+    zoom: 1;
+    z-index: 9998;
+}
+
 
 nav ul{
-    display: flex;
-    flex-direction: row;
-    justify-content: space-between;
-    list-style: none;
+
+    height: 36px;
+    position: relative;
+    margin: 0;
+    padding: 0;
+    zoom: 1;
+    display: table;
+    float: left;
+    table-layout: fixed;
     width: 845px;
+    text-align: left;
+
+    list-style: none outside;
+
+
+    margin-block-start: 1em;
+    margin-block-end: 1em;
+    margin-inline-start: 0px;
+    margin-inline-end: 0px;
+    padding-inline-start: 40px;
+
+    z-index: 0;
+}
+
+nav li{
+    display: table-cell;
+    width: 100%;
+    overflow: hidden;
+    margin: 0;
+    padding: 0;
     height: 36px;
 }
 
 
-a{
-color: black;
+nav li a{
+color: white;
+display: block;
+width: 102px;
+cursor: pointer;
+margin: 3px auto;
+height: 30px;
 }
 
 p{
@@ -101,16 +161,15 @@ border-left: 1px solid #ccc;
 }
 
 .billboard {
+    bottom: 292px;
     position: absolute;
     top: 0;
-    right: 0;
     left: 0;
     overflow: hidden;
-    right: auto;
-    left: 50%;
-    margin-left: -720px;
+    right: 0;
+    margin-left: 0;
+    padding: 0;
     min-height: 583px;
-    height: 70vh;
     width: 1440px;
     background: url(https://web.archive.org/web/20140301004302im_/http://images.apple.com/v/home/as/images/your_verse_hero.jpg) 50% 100% no-repeat;
     background-size: 1440px 1315px;
@@ -141,17 +200,6 @@ header h2{
 font-size: 16px;
 line-height: 18px;
 font-weight: bold;
-}
-
-nav{
-    background: linear-gradient(#000,#fff);
-    color: white;
-    display: flex;
-    margin: 0 auto;
-    height: 36px;
-    position: relative;
-    top: 18px;
-    width: 845px;
 }
 
 input[type="text"] {
