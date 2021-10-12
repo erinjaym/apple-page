@@ -15,25 +15,7 @@ font: 12px/18px "Lucida Grande", "Lucida Sans Unicode", Helvetica, Arial, Verdan
 }
 
 
-article, aside, footer, header, hgroup, nav, section, figure, figcaption {
-    display: block;
-}
-
 nav{
-    border-radius: 4px;
-    box-shadow: rgb(0 0 0 / 30%) 0 1px 2px;
-    color: white;
-    display: block;
-    font: 12px/18px "Lucida Grande", "Lucida Sans Unicode", Helvetica, Arial, Verdana, sans-serif;
-
-    table-layout: fixed;
-    text-align: left;
-    margin: 0 auto;
-    height: 36px;
-    padding: 0;
-    position: relative;
-    top: 18px;
-    width: 980px;
     background:  -webkit-gradient(linear, 0 0, 0 100%, 
     from(rgba(0, 0, 0, .2)), color-stop(0.05, rgba(0, 0, 0, 0)), 
     color-stop(0.97, rgba(0, 0, 0, 0)), 
@@ -45,54 +27,58 @@ nav{
     -webkit-gradient(linear, 0 100%, 0 0, 
     from(#666), color-stop(0.5, #5e5e5e), color-stop(0.51, #707070), 
     to(#808080));
+    border-radius: 4px;
+    box-shadow: rgb(0 0 0 / 30%) 0 1px 2px;
+    color: white;
+    display: block;
+    font: 12px/18px "Lucida Grande", "Lucida Sans Unicode", Helvetica, Arial, Verdana, sans-serif;
+    height: 36px;
+    margin: 0 auto;
+    padding: 0;
+    position: relative;
+    table-layout: fixed;
+    text-align: left;
+    top: 18px;
+    width: 980px;
     zoom: 1;
     z-index: 9998;
 }
 
 
 nav ul{
-
-    height: 36px;
-    position: relative;
-    margin: 0;
-    padding: 0;
-    zoom: 1;
     display: table;
     float: left;
-    table-layout: fixed;
-    width: 845px;
-    text-align: left;
-
     list-style: none outside;
-
-
+    margin: 0;
     margin-block-start: 1em;
     margin-block-end: 1em;
+
     margin-inline-start: 0px;
     margin-inline-end: 0px;
-    padding-inline-start: 40px;
 
+    padding-inline-start: 40px;
+    padding: 0;
+    position: relative;
+    table-layout: fixed;
+    text-align: left;
+    width: 845px;
     z-index: 0;
+    zoom: 1;
 }
 
 nav li{
+    border-width: 0 1px 0 1px;
+    border-style: solid;
+    color: white;
+    cursor: pointer;
     display: table-cell;
-    width: 100%;
     overflow: hidden;
-    margin: 0;
     padding: 0;
-    height: 36px;
+    text-align: center;
+    width: 100%;
 }
 
 
-nav li a{
-color: white;
-display: block;
-width: 102px;
-cursor: pointer;
-margin: 3px auto;
-height: 30px;
-}
 
 p{
     margin-block-start: 1em;
@@ -102,9 +88,9 @@ p{
     }
 
 .wrapper{
-margin: 0 auto;
-width: 980px;
-padding: 1em 0 2.6em;
+    margin: 0 auto;
+    width: 980px;
+    padding: 1em 0 2.6em;
 }
 
 .wrapper:after{
@@ -144,11 +130,11 @@ footer ul {
 }
 
 footer .left{
-    float: left;
     clear: both;
-    width: 49%;
+    float: left;
     padding-top: 1.5em;
     text-align: left;
+    width: 49%;
     }
     
 
